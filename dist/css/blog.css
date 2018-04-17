@@ -141,16 +141,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .excerpt {
     white-space: pre-wrap;
-
-    -webkit-mask-image: -webkit-linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
+    -webkit-mask-image:-webkit-linear-gradient(#1a1a1a calc(100% - 6rem),transparent calc(100% - 1.8rem))
 }
 
-/*.excerpt:before {
-    content:'';
-    width:100%;
-    height:100%;    
-    position:absolute;
-    left:0;
-    top:0;
-    background:linear-gradient(transparent 150px, white);
-}*/
+.blog-post{
+  position: relative;
+}
+
+.continue-read{
+  position: absolute;
+  bottom: 4px;
+}
+
+.blog-post-title-big{
+}
+
+.markdown-body .highlight pre, .markdown-body pre {
+    background-color: #343a40 !important;
+}
+
+
+

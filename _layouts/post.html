@@ -7,9 +7,23 @@ layout: default
 		<div class="col-md-8 blog-main">
 
 			<div class="blog-post">
-				<h2 class="blog-post-title">Another blog post</h2>
-				<p class="blog-post-meta">2018-04-15 by <a href="#">Jacob</a></p>
-				<div class="content">
+				<h1 class="blog-post-title-big">{{ page.title }}</h1>
+				<p class="blog-post-meta">
+					{{ page.date | date: "%Y-%m-%d" }}
+					by {{site.author}}
+					<span class="post-tags">
+						{% if page.tags.size > 0 %}
+						{% for cat in page.tags %}
+						<a class="post-cat" href="{{ site.url }}/tags/#{{ cat }}">{{ cat }}</a>
+						{% unless forloop.last %}
+						<span>/</span>
+						{% endunless %}
+						{% endfor %}
+						{% endif %}
+					</span>
+				</p>
+
+				<div class="content markdown-body">
 					{{content}}
 				</div>
 				
