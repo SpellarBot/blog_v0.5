@@ -7,18 +7,22 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample07">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Archive</a>
+
+          {% assign current = page.title %}
+          <li class="nav-item {% if current == null %} active{% endif %}">
+            <a href="/" class="nav-link">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tags</a>
+          
+          {% assign sorted_pages = site.pages | sort:"order" %}
+          {% for page in sorted_pages %}
+          {% if page.title and page.permalink != "/404.html" %}
+          <li class="nav-item {% if current == page.title %} active{% endif %}">
+            <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Links</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
+          {% endif %}
+          {% endfor %}
+
+
 
         </ul>
         <form class="form-inline my-2 my-md-0">

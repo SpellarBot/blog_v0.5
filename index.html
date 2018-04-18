@@ -38,7 +38,7 @@ layout: default
 						{% if post.tags.size > 0 %}
 
 						{% for cat in post.tags %}
-						<a class="post-cat" href="{{ site.url }}/tags/#{{ cat }}">{{ cat }}</a>
+						<a class="post-cat" href="/tags/#{{ cat }}">{{ cat }}</a>
 						{% unless forloop.last %}
 						<span>/</span>
 						{% endunless %}
@@ -55,12 +55,6 @@ layout: default
 			</div>
 
 			{% endfor %}
-
-			<!--
-			<nav class="blog-pagination">
-				<a class="btn btn-outline-primary" href="#">Older</a>
-				<a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-			</nav> -->
 
 
 			<!-- Pagination links start-->

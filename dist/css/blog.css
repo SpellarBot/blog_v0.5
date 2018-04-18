@@ -156,9 +156,47 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post-title-big{
 }
 
+
+/* force */
 .markdown-body .highlight pre, .markdown-body pre {
     background-color: #343a40 !important;
 }
 
+.navbar-dark .navbar-brand {
+    color: #9a9da0;
+}
 
+/* archive */
+.article-list {
+    margin-top: 10px
+}
+
+.article-list .list-year {
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px
+}
+
+.article-list .list-item {
+    font-size: 16px;
+    margin-left: 2em;
+    line-height: 30px
+}
+
+.article-list .list-item span {
+    color: #999
+}
+
+.article-list .list-item a {
+    padding: .2em 1em
+}
+
+
+.article-list li {
+    list-style: none;
+}
+
+.article-list li+li {
+    margin-top: 0px;
+}
 
