@@ -48,6 +48,8 @@ plugins:
 #   - vendor/ruby/
 
 
+
+username: kyshel
 author: Kyshel
 
 plugins: [jekyll-paginate]
