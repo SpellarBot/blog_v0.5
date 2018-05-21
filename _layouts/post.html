@@ -10,7 +10,7 @@ layout: default
 				<h1 class="blog-post-title-big">{{ page.title }}</h1>
 				<p class="blog-post-meta">
 					{{ page.date | date: "%Y-%m-%d" }}
-					by {{site.author}}
+					by {{site.username}}
 					<span class="post-tags">
 						{% if page.tags.size > 0 %}
 						{% for cat in page.tags %}
@@ -38,6 +38,7 @@ layout: default
 				</div>
 				
 			</div><!-- /.blog-post -->
+
 		</div><!-- /.blog-main -->
 
 		{% include aside.html %}

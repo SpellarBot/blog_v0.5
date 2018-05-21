@@ -23,5 +23,7 @@ Looking forward to meet one who like this version.
 1. The repo has a suppose that it's hosted on github with `github_username` in `_config.yml`, some buttons rely this to work correctly
 
 ## Credits
-Made with ❤ by [kyshel](https://github.com/kyshel)
+Made with ❤ by [kyshel](https://github.com/kyshel)    
 Theme from [Bootstrap-Examples-Blog](https://getbootstrap.com/docs/4.1/examples/blog/)
+Powered by Jekyll    
+Hosted on GitHub     
